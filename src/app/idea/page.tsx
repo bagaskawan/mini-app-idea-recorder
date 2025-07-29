@@ -37,9 +37,9 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 p-4 md:p-8">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 p-6 md:p-10">
       <div className="max-w-8xl mx-auto">
-        <div className="text-center mb-8">
+        <div className="text-center mb-2">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">
             Mini App Idea Recorder
           </h1>
@@ -48,7 +48,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 xl:grid-cols-5 gap-0 xl:gap-8">
+        <div className="grid grid-cols-1 xl:grid-cols-6 gap-0 xl:gap-8">
           {/* Left side - 4 columns */}
           <div className="xl:col-span-2">
             <IdeaForm
@@ -60,7 +60,7 @@ export default function Home() {
           </div>
 
           {/* Right side - 6 columns */}
-          <div className="xl:col-span-3">
+          <div className="xl:col-span-4">
             <IdeaList data={data} deleteItem={deleteItem} />
           </div>
         </div>

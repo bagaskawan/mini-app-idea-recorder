@@ -22,12 +22,9 @@ interface IdeaListProps {
 export default function IdeaList({ data, deleteItem }: IdeaListProps) {
   return (
     <Card className="border-none shadow-none bg-transparent">
-      <CardHeader className="pb-6">
+      <CardHeader>
         <CardTitle className="text-2xl font-semibold text-gray-900 flex items-center justify-between">
-          <span className="flex items-center gap-2">
-            <Database className="w-6 h-6 text-blue-600" />
-            List Ide
-          </span>
+          <span className="flex items-center gap-2"></span>
           <span className="text-sm font-normal bg-blue-100 text-blue-800 px-3 py-1 rounded-full">
             {data.length} items
           </span>
